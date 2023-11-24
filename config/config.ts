@@ -21,9 +21,9 @@ export default {
   ],
   mode: 'site',
   title: 'zl react hooks',
-  // '/' 会找到 public
-  favicon: '/avatar.jpg',
-  logo: '/logo.jpg',
+  // '/' 会找到 public,注意，这里要加 /zl-hooks 不然打包后找不到站点
+  favicon: '/zl-hooks/avatar.jpg',
+  logo: '/zl-hooks/logo.jpg',
   dynamicImport: {},
   manifest: {},
   hash: true,
@@ -39,7 +39,7 @@ export default {
       rel: 'stylesheet',
       href: 'https://unpkg.com/@alifd/theme-design-pro@0.6.2/dist/next-noreset.min.css',
     },
-    { rel: 'stylesheet', href: '/style.css' },
+    { rel: 'stylesheet', href: '/zl-hooks/style.css' },
   ],
   navs: [
     { title: '指南', path: '/guide' },

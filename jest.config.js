@@ -10,7 +10,10 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
   },
-  // 代码测试覆盖需要收集的内容
+  // 这里需要写，不然 lodash 测试时候报错
+  moduleNameMapper: {
+    '^lodash-es$': 'lodash',
+  },
   collectCoverageFrom: [
     '<rootDir>/**/src/**/*.{js,jsx,ts,tsx}',
     '!**/demo/**',
